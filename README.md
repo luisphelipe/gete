@@ -7,6 +7,6 @@ sudo pip install **beautifulsoup4 lxml**
 ### Usage
 run the main, with wanted problem number:
 ```
-./main.py 1
+./main.py 1 # Prints the problem 1 in the terminal emulator.
 ```
 
