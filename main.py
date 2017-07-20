@@ -8,10 +8,14 @@ def main():
 
     exercise = sys.argv[1]
     
-    if(exercise < 1 or not isinstance(exercise, int) ):
-        print("The wanted exercise number must be a positive integer")
+    try:
+        if(int(exercise) < 1):
+            print("The parameter must be positive")
+            return 
+    except:
+        print("The parameter must be a number")
         return
-
+    
     try:
         source = urllib.request.urlopen('https://projecteuler.net/problem='+ exercise)
         site = bs.BeautifulSoup(source,'lxml')
@@ -20,7 +24,7 @@ def main():
         problemContent = site.find('div', {'class': 'problem_content'})
         print("\n", problemName.get_text(), "\n \n" ,problemContent.get_text(), "\n")
     except:
-        print("And error ocurred, maybe there is no exercise #{}".format(exercise)
+        print("And error ocurred, maybe there is no exercise #{}".format(exercise))
 
 if __name__ == "__main__": main()
 
