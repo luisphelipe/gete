@@ -11,9 +11,9 @@ def main():
     source = urllib.request.urlopen('https://projecteuler.net/problem='+ exercise)
     site = bs.BeautifulSoup(source,'lxml')
 
-#    problemName = site.find('div', {'id': 'problem_info'})
-    problemContent = site.find('div', {'class': 'problem_conten'})
-    print(problemContent.get_text())
+    problemName = site.find('div', {'id': 'problem_info'})
+    problemContent = site.find('div', {'class': 'problem_content'})
+    print("\n", problemName.get_text(), "\n \n" ,problemContent.get_text(), "\n")
 
 if __name__ == "__main__": main()
 
