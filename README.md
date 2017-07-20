@@ -7,6 +7,15 @@ sudo pip install **beautifulsoup4 lxml**
 ### Usage
 run the main, with wanted problem number:
 ```
-./main.py 1 # Prints the problem 1 in the terminal emulator.
+# Prints the problem 'num' in the terminal emulator.
+./main.py num 
 ```
-
+### Recomendations
+make an alias that executes the main
+```
+alias geteuler="~/geteuler/main.py"
+```
+so you can get the problem by just typing
+```
+geteuler num 
+```
