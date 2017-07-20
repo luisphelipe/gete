@@ -19,3 +19,7 @@ so you can get the problem by just typing
 ```
 geteuler num 
 ```
+if you want to keep the alias after you close the terminal, add the alias to the terminal configuration file, mine was
+```
+~/.extend.bashrc 
+```
