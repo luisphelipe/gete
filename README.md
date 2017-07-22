@@ -8,7 +8,7 @@ sudo pip install **beautifulsoup4 lxml**
 ```
 
 ### Usage
-run the main, with wanted problem number:
+In terminal, run main.py with the wanted problem number as parameter:
 ```
 # Prints the problem 'num' in the terminal emulator.
 ./main.py num 
@@ -17,11 +17,11 @@ run the main, with wanted problem number:
 ### Recomendations
 make an alias that executes the main
 ```
-alias gler="~/gler/main.py"
+alias gete="~/gete/main.py"
 ```
 so you can get the problem by just typing
 ```
-geteuler num 
+gete num 
 ```
 if you want to keep the alias after you close the terminal, add the alias to the terminal configuration file, mine was
 ```
