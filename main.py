@@ -27,7 +27,7 @@ def main():
 
         problemName = site.find('h2')
         problemContent = site.find('div', {'class': 'problem_content'})
-        print("\n   " + problemName.get_text() + "\n    " + problemContent.get_text())
+        print("\n    " + problemName.get_text() + "\n\n    " +  problemContent.get_text().lstrip("\n"))
     
     # Exception handling for when there isn't a problem with such parameter(parameter too high), or when and random error occur.
     except:
