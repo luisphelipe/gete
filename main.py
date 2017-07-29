@@ -27,11 +27,12 @@ def main():
 
         problemName = site.find('h2')
         problemContent = site.find('div', {'class': 'problem_content'})
-        print("\n", problemName.get_text(), "\n \n" ,problemContent.get_text(), "\n")
+        print("\n   " + problemName.get_text() + "\n    " + problemContent.get_text())
     
     # Exception handling for when there isn't a problem with such parameter(parameter too high), or when and random error occur.
     except:
         print("\n   An error ocurred, maybe there is no exercise #{}".format(exercise))
+
 
 if __name__ == "__main__": main()
 
